@@ -4,6 +4,7 @@
   "description": "Webpack plugin integration with mocha testing framework + coverage with istanbul.",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm run build",
     "test": "webpack --config spec/fixtures/project_1/webpack.config.js && !(webpack --config spec/fixtures/project_2/webpack.config.js)",
     "prebuild": "rimraf release",
     "build": "tsc && cpy package.json README.md release"
