@@ -96,7 +96,7 @@ You can pass all options which the Mocha JS API takes in `mocha`.
     
     // This will include all files in the src directory so untest code shows up in the coverage
     // report.
-    // Tell webpack to bundle all spec files in a context.
+    // Tell webpack to bundle all source files in a context.
     const ctx = require.context('src', true, /\.js/)
     
     // Evaluate all modules in context.
