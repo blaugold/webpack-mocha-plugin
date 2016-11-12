@@ -1,0 +1,43 @@
+{
+  "name": "webpack-mocha-plugin",
+  "version": "0.1.0",
+  "description": "Webpack plugin integration with mocha testing framework + coverage with istanbul.",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --config spec/fixtures/project_1/webpack.config.js && !(webpack --config spec/fixtures/project_2/webpack.config.js)",
+    "prebuild": "rimraf release",
+    "build": "tsc && cpy package.json README.md release"
+  },
+  "keywords": [
+    "mocha",
+    "webpack",
+    "testing",
+    "remap",
+    "coverage",
+    "istanbul"
+  ],
+  "author": "Gabriel Terwesten <gabriel@terwesten.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.46",
+    "awesome-typescript-loader": "^2.2.4",
+    "chai": "^3.5.0",
+    "cpy-cli": "^1.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2",
+    "remap-istanbul": "^0.7.0",
+    "rimraf": "^2.5.4",
+    "source-map-loader": "^0.1.5",
+    "sourcemap-istanbul-instrumenter-loader": "^0.2.0",
+    "typescript": "^2.0.9",
+    "webpack": "2.1.0-beta.25",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "peerDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.0",
+    "remap-istanbul": "^0.7.0"
+  }
+}
