@@ -2,7 +2,7 @@
 Webpack plugin integration with mocha testing framework + coverage with istanbul.
 
 ## Installation
-```
+```bash
     npm i -D webpack-mocha-plugin mocha istanbul remap-istanbul
 ```
 
@@ -12,7 +12,7 @@ This webpack configuration will run your tests and write a html and json coverag
 each compilation.
 You can configure entry and output how ever you like. The plugin will add all generated files
 ending in `.js` to the mocha test.
-```
+```javascript
     const WebpackMochaPlugin = require('webpack-mocha-plugin');
     const nodeExternals = require('webpack-node-externals');
     
@@ -69,7 +69,7 @@ ending in `.js` to the mocha test.
 ```
 
 ## Options
-```
+```javascript
     new WebpackMochaPlugin({
         mocha?: any = {};
         codeCoverage?: boolean = false;
@@ -86,7 +86,7 @@ You can pass all options which the Mocha JS API takes in `mocha`.
 `coverageDir` is the directory where the coverage report will be stored.
 
 ## Test Bundle
-```
+```javascript
     // This will only inlcude spec files and files required by them in the coverage report.
     // Tell webpack to bundle all spec files in a context.
     const ctx = require.context('src', true, /\.(spec)\.js/)
