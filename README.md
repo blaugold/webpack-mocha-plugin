@@ -1,6 +1,8 @@
 ## webpack-mocha-plugin
 Webpack plugin integration with mocha testing framework + coverage with istanbul.
 
+[![CircleCI](https://circleci.com/gh/blaugold/webpack-mocha-plugin/tree/master.svg?style=svg&circle-token=6120e3250facc9807944a407480a3705b171216e)](https://circleci.com/gh/blaugold/webpack-mocha-plugin/tree/master)
+
 ## Installation
 ```bash
     npm i -D webpack-mocha-plugin mocha istanbul remap-istanbul
