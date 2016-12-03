@@ -1,6 +1,6 @@
 {
   "name": "webpack-mocha-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Webpack plugin integration with mocha testing framework + coverage with istanbul.",
   "main": "index.js",
   "scripts": {
