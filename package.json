@@ -8,7 +8,8 @@
     "test": "webpack --config spec/fixtures/project_1/webpack.config.js && !(webpack --config spec/fixtures/project_2/webpack.config.js)",
     "prebuild": "rimraf release",
     "build": "tsc && cpy package.json README.md release",
-    "dev": "webpack --config spec/fixtures/project_1/webpack.config.js"
+    "dev": "webpack --config spec/fixtures/project_1/webpack.config.js",
+    "version": "standard-version"
   },
   "keywords": [
     "mocha",
@@ -33,6 +34,7 @@
     "rimraf": "^2.5.4",
     "source-map-loader": "^0.1.5",
     "sourcemap-istanbul-instrumenter-loader": "^0.2.0",
+    "standard-version": "^4.0.0",
     "typescript": "^2.0.9",
     "webpack": "2.1.0-beta.25",
     "webpack-node-externals": "^1.5.4"
