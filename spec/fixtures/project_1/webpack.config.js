@@ -26,18 +26,18 @@ module.exports = {
             {
                 enforce: 'pre',
                 test: /\.js$/,
-                loader: 'source-map'
+                loader: 'source-map-loader'
             },
             {
                 test: /\.ts$/,
-                loader: 'awesome-typescript'
+                loader: 'awesome-typescript-loader'
             },
             {
                 enforce: 'post',
                 test: /\.(js|ts)$/,
                 // Exlude tests so they don't show up in coverage report.
                 exclude: /\.(spec)\.(ts|js)$/,
-                loader: 'sourcemap-istanbul-instrumenter',
+                loader: 'sourcemap-istanbul-instrumenter-loader',
                 query: {
                     'force-sourcemap': true
                 }
