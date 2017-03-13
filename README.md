@@ -66,7 +66,12 @@ ending in `.js` to the mocha test.
             new WebpackMochaPlugin({
                 codeCoverage: true
             })
-        ]
+        ],
+        // When using code coverage exclude the coverage report from being watched.
+        // Otherwise you might get an infinite loop.
+        watchOptions: {
+            ignored: /coverage/
+        }
     };
 ```
 
