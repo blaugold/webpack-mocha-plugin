@@ -1,4 +1,6 @@
 ## webpack-mocha-plugin
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/blaugold/webpack-mocha-plugin.svg)](https://greenkeeper.io/)
 Webpack plugin integration with mocha testing framework + coverage with istanbul.
 
 [![CircleCI](https://circleci.com/gh/blaugold/webpack-mocha-plugin/tree/master.svg?style=svg&circle-token=6120e3250facc9807944a407480a3705b171216e)](https://circleci.com/gh/blaugold/webpack-mocha-plugin/tree/master)
